@@ -1,15 +1,17 @@
 <template>
-    <div class="container mx-auto bg-emerald-50 border-2 border-emerald-700 p-4 m-2 rounded-2xl from-slate-500">
-        <table class="w-4/4 border-2 table-auto font-mono">
+    <div class="container mx-auto bg-violet-300 border-2 border-indigo-600 text-sky-300 p-4 m-3 rounded-2xl from-slate-500 bg-opacity-40 duration-500 ease-in-out hover:bg-opacity-100 hover:text-indigo-600 hover:scale-105">
+        <table class="border-2 border-dashed table-auto font-mono">
             <tbody class="m-4">
                 <td colspan="4" class="w-1/4">
-                    <div class="h-40 w-40 border-solid rounded-full border-2 border-teal-600 m-2" :style="getImage(image)"></div>
+                    <div class="border-solid border-2 border-indigo-600 m-2 rounded-full overflow-hidden">
+                        <div class="h-40 w-40 bg-contain bg-no-repeat bg-center" :style="getImage(image)"></div>
+                    </div>
                 </td>
                 <td>
                     <tr class="text-2xl font-bold">Name</tr>
-                    <tr class="text-2xl font-bold">Nickname</tr>
-                    <tr class="text-2xl font-bold">Birthday</tr>
-                    <tr class="text-2xl font-bold">Status</tr>
+                    <tr class="text-2xl  font-bold">Nickname</tr>
+                    <tr class="text-2xl  font-bold">Birthday</tr>
+                    <tr class="text-2xl  font-bold">Status</tr>
                 </td>
                 <td>
                     <tr class="text-2xl font-light">{{name}}</tr>

@@ -1,6 +1,5 @@
 <template>
-<div>
-    main layout
+<div class="bg-[url(./src/assets/image/DaySky.jpg)] bg-cover bg-center h-screen">
     <div>
         <slot/>
     </div>
